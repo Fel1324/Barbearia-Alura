@@ -1,0 +1,106 @@
+/*INÍCIO DA PARTE PRINCIPAL*/
+.products{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 5rem;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.products__item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    margin: 0 1.2rem;
+    padding: 3rem 2rem;
+    border: .2rem solid #000000;
+    border-radius: 2rem;
+}
+
+.products__item:hover{/*Quando o mouse estiver por cima dos <a> da tag que tem a classe produtos algum determinado estilo vai rodar*/
+    border-color: #C78C19;
+}
+
+.products__item:active{/*Quando o mouse estiver pressionado nos <a> da tag que tem a classe produtos algum determinado estilo vai rodar*/
+    border-color: #088C19;
+}
+
+.products__item:hover .products__title{/*Eu quero que o h2 quando o mouse estiver por cima dos <a> da tag que tem a classe produtos, ele fique com determinado estilo  */
+    font-size: 3.4rem;
+}
+
+.products__title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.products__descrition{
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.products__price{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 1.0rem;
+}
+/*FIM DA PARTE PRINCIPAL*/
+@media screen and (min-width: 350px) {
+    .products__item{
+        margin: 0 2.4rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .products{
+        display: grid;
+        grid-template-columns: 85%;
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+        row-gap: 5rem;
+        width: 100%;
+        padding: 5rem 0;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .products{
+        grid-template-columns: 75%;
+        row-gap: 5.5rem;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .products{
+        grid-template-columns: 65%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .products{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (min-width: 997px) {
+    .products{
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .products{
+        grid-template-columns: repeat(3, 1fr);
+        width: 940px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .products__item:hover .products__title{
+        font-size: 3.25rem;
+    }
+}

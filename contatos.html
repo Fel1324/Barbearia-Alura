@@ -1,0 +1,115 @@
+<!--TAG LABEL = ETIQUETA PARA UM INPUT
+    TAG TEXTAREA É UMA ÁREA QUE SERVE PARA O USUÁRIO DIGITAR TEXTO, DIGITAR UM CONTEÚDO COMPLETO
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Barbearia Alura</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/style-contatos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1><img src="imgs/logo.png" alt="Logo da Barbearia Alura com a cor preta"></h1>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__link"><a href="index.html">Home</a></li>
+                        <li class="header__link"><a href="produtos.html">Produtos</a></li>
+                        <li class="header__link"><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form">
+                <label class="form__label" for="nomesobrenome">Nome e Sobrenome</label>
+                <input class="form__input" type="text" id="nomesobrenome" required>
+
+                <label class="form__label" for="email">Email</label>
+                <input class="form__legend form__input" type="email" id="email" required placeholder="seuemail@dominio.com">
+
+                <label class="form__label" for="telefone">Telefone</label>
+                <input class="form__legend form__input" type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
+
+                <label class="form__label" for="mensagem">Mensagem</label>
+                <textarea class="form__input__text" id="mensagem" cols="70" rows="10" required></textarea>
+
+                <fieldset class="fieldset">
+                    <legend class="form__legend">Como prefere o nosso contato?</legend>
+                    <label class="form__label" for="radio-email"><input class="fieldset__input" type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    
+                    <label class="form__label" for="radio-telefone"><input class="fieldset__input" type="radio" name="contato" value="telefone" id="radio-telefone" checked>Telefone</label>
+
+                    <label class="form__label" for="radio-whatsapp"><input class="fieldset__input" type="radio" name="contato" value="whatsapp" id="radio-whatsapp">WhatsApp</label>    
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend class="form__legend">Qual horário prefere ser atendido?</legend>
+                    <select class="select">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input class="checkbox__input" type="checkbox">Gostaria de receber nossas novidades por email?</label>
+                
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th class="th">Dia</th>    
+                        <th class="th">Horário</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="td">Segunda-Feira</td>
+                        <td class="td">8h-20h</td>
+                    </tr>
+
+                    <tr>
+                        <td class="td">Terça-Feira</td>
+                        <td class="td">8h-20h</td>
+                    </tr>
+
+                    <tr>
+                        <td class="td">Quarta-Feira</td>
+                        <td class="td">8h-20h</td>
+                    </tr>
+
+                    <tr>
+                        <td class="td">Quinta-Feira</td>
+                        <td class="td">8h-20h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="td">Sexta-Feira</td>
+                        <td class="td">8h-20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer class="footer">
+            <img src="imgs/logo-branco.png" alt="Logo da Barbearia Alura com a cor branca">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cabecalho: #BBBBBB;
+    --fonte: #000000;
+    --fonte-hover: #C78C19;
+    --enviar: #FFFFFF;
+    --enviar-hover: #8B6312;
+    --linear-gradient-color1: #FEFEFE;
+    --linear-gradient-color2: #888888;
+
+    --formulario-bordas: #575757;
+    --thead: #555555;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,161 @@
+.banner{
+    width: 100%;
+    vertical-align: top;
+}
+
+.main{
+    background: var(--linear-gradient-color1);
+    padding: 4rem 2rem 2rem 2rem;
+    width: 100%;
+}
+
+.section__title{
+    color: var(--fonte);
+    font-size: 3.4rem;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.utensilios{
+    width: 50%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+.paragraph{
+    color: var(--fonte);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.paragraph:last-of-type{
+    margin-bottom: 0;
+}
+
+.main strong{
+    font-weight: 700;
+}
+
+.main em{
+    font-style: italic;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(var(--linear-gradient-color1), var(--linear-gradient-color2));
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+}
+
+.map__content{
+    padding-top: 1.4rem; 
+    width: 100vw;
+    max-width: 700px;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--linear-gradient-color2);
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+}
+
+.benefits__content{
+    margin-top: 1.6rem;
+}
+
+.items{
+    color: var(--fonte);
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.items:nth-child(1){
+    font-weight: bold;
+}
+
+.items:last-child{
+    margin-bottom: 1.6rem;
+}
+
+.items::before{
+    content: "🟊";
+    margin: .5rem;
+}
+
+.benefits__img{
+    opacity: 1;
+    transition: 400ms;
+    width: 100vw;
+    max-width: 480px;
+    box-shadow: 0px 10px 15px;
+}
+
+.benefits__img:hover{
+    opacity: 0.3;
+    transition: all 400ms;
+}
+
+.video{
+    padding: 4.8rem 0 4rem 0;
+    width: 100vw;
+    max-width: 700px;
+}
+
+@media screen and (min-width: 768px) {
+    .main__content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .utensilios{
+        width: 200px;
+        height: 200px;
+        margin-right: 1.8rem;
+        justify-self: center;
+    }
+
+    .paragraph{
+        text-align: justify;
+    }
+
+    .benefits__img{
+        box-shadow: 10px 10px 20px ;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main{
+        width: 940px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .map__content{
+        width: 940px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .benefits__content{
+        display: flex;
+        flex-direction: row;
+        gap: 3.2rem;
+    }
+
+    .benefits__img{
+        box-shadow: 10px 10px 20px ;
+    }
+}
