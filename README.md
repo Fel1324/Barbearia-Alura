@@ -30,7 +30,7 @@
 <h2 id="desc">📚 Descrição do projeto</h2>
 
 <p align="justify">
-    A Barbearia Alura é um site que mostra os serviços oferecidos pelos barbeiros da barbearia, mostra também a localização do lugar onde é realizado os trabalhos dos barbeiros, mostra os benefícios do local e possui uma página de formulário para melhor comunicação com os clientes, essa página de formulário possui também uma tabela com os dias e horários de funcionamento do estabelecimento.
+    A Barbearia Alura é um site que divulga os serviços oferecidos, mostra também a localização do local, exibe os benefícios e possui uma página de formulário para melhor comunicação com os clientes, a página de formulário possui uma tabela com os dias e horários de funcionamento do estabelecimento.
 </p>
 
 <br>
